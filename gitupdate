@@ -47,7 +47,7 @@ case $ans in
       echo " Ok!, adding to an existing repo  " 
       read -ep "Enter your userName on github: " userName
       read -ep "Enter RepoName on github: " repoName
-
+      # pushing to an existing repo 
       gitInit
       git remote add origin https://github.com/"$userName"/"$repoName".git
       git push -u origin main
